@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700;800&display=swap');
+
+
+*,*::after,
+::before{
+  margin: 0%;
+  padding:0%;
+  box-sizing: border-box;
+  outline: none; 
+}
+
+html{
+  font-size: 16px;
+
+}
+:root{
+  --clr-white:white;
+  --clr-black:black;
+  --amber-yellow: #ffbe0bff;
+--orange-pantone: #fb5607ff;
+--winter-pink: #ff006eff;
+--blue-violet: #8338ecff;
+--azure-blue: #3a86ffff;
+box-shadow: 0px 22px 12px rgba(0,0,0,0.15);
+}
+
+/* global css */
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+a{
+text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-image: url(../images/wallpaper.jpg);
+  background-position: 10% 26%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 2rem;
+  color: white;
+  background-color: #080808;
+  padding: 0.6rem 2rem;
+  border-radius: 8px;
+}
+
+h2{
+  color: white;
+  font-size: 15px;
+  font-family: 'Cinzel', serif;
+
+}
+.container {
+  width: 40%;
+  min-width: 450px;
+  padding: 50px 30px;
+}
+
+.inputs-wrapper {
+  font-family: 'Cinzel', serif;
+  border: none;
+  padding: 30px 25px;
+  border-radius: 8px;
+  margin-bottom: 50px;
+}
+
+input,
+button {
+  height: 50px;
+  background-color: #ffffff;
+  color: #080808;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+input {
+  width: 60%;
+  padding: 0 20px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+input:hover {
+  transition: all 0.3s;
+  background-color: aliceblue;
+}
+
+button {
+  font-weight: 700;
+  width: 30%;
+  float: right;
+  /* transition: all 0.25s; */
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+}
+
+button:hover {
+  outline-offset: 2px;
+  transition: all 0.3s;
+  background-color: aliceblue;
+}
+
+button:active {
+ background-color: yellow;
+  transition: all 0.25s;
+  transform: scale(0.97) translateZ(-3px);
+
+}
+
+.outputs-wrapper {
+  margin-top: 6rem;
+  visibility: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: 3s all ease;
+}
+
+.outputs-wrapper div {
+  height: 100px;
+  width: 100px;
+  background-color: #080808;
+  border-radius: 5px;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  padding: 20px 0;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+
+span {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+p {
+  padding-top: 7px;
+  font-size: 14px;
+  color: #707070;
+  font-weight: 700;
+}
+
+/* *********** */
+/* icons start */
+/* *********** */
+
+.social-icon {
+  
+  display: flex;
+  column-gap: 25px;
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+}
+
+
+.icons:hover {
+  outline-offset: 4px;
+}
+
+.fa-brands{
+padding-left: 8px;
+padding-top: 8px;
+}
+
+
+/* instagram */
+.fa-instagram {
+  color: #d62976;
+}
+
+.fa-instagram:hover {
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf407 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  outline-color: #a02d76;
+  color: white;
+}
+
+/* linkedin */
+.fa-linkedin {
+  font-size: 24px;
+  color: #0a66c2;
+  background-color: transparent;
+}
+
+.fa-linkedin:hover {
+  background-color: #0a66c2;
+  outline-color: #0077b5;
+  color: white;
+}
+
+/* github */
+.fa-github {
+  color: #6e5494;
+}
+
+.fa-github:hover {
+  color: white;
+  outline-color: #6e5494;
+  background-color: #282727;
+}
+
+
+
